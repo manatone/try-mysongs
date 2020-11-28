@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="manato.css">
+    <title>山﨑マナト〜おすすめ曲診断〜</title>
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <div class="d-flex justify-content-center">
+        <h1>どちらの曲調が好きですか？</h1>
+      </div>
+    </div>
+
+    <!-- メジャーかマイナーを選ぶ -->
+    <div class="container mt-5">
+      <div id="chord-select" class="d-flex justify-content-center">
+        <button type="button" id="major-song" class="btn btn-success major">明るい曲</button>
+        <button type="button" id="minor-song" class="btn btn-success ml-5 minor">暗い曲</button>
+      </div>
+    </div>
+
+    <!-- 速い曲か遅い曲か選ぶ -->
+    <div class="container mt-5">
+      <div id="speed-select" class="d-flex justify-content-center">
+        <div class="major">
+          <button type="button" class="btn btn-danger ml-3">明るくて速い曲</button>
+          <button type="button" class="btn btn-info ml-3">明るくて遅い曲</button>
+        </div>
+        <div class="minor">
+          <button type="button" class="btn btn-danger ml-3">暗くて速い曲</button>
+          <button type="button" class="btn btn-info ml-3">暗くて遅い曲</button>
+        </div>
+      </div>
+    </div>
+
+<!-- URLへ誘導 -->
+   <div class="container mt-5">
+      <div class="d-flex justify-content-center">
+        <iframe id="hitoe" width="560" height="315" src="https://www.youtube.com/embed/xPQwmqDmjRQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="danro" width="560" height="315" src="https://www.youtube.com/embed/9Ta1KWAf-1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="waltz" width="560" height="315" src="https://www.youtube.com/embed/as5p5H6Ws5c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="kitty" width="560" height="315" src="https://www.youtube.com/embed/x-O_UCz-xzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <h2 class="recomend">こちらがおすすめです♪</h2>
+
+<!-- js接続 -->
+    <script type="text/javascript" src="manato.js">
+    </script>
+  </body>
+</html>
